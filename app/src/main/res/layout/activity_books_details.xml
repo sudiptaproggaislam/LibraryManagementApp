@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BooksDetails">
+    <include
+    android:id="@+id/books_details_activity_toolbar"
+    layout="@layout/toolbar_layout">
+</include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/books_details_activity_toolbar"
+        android:orientation="vertical">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonLayout"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Available"
+                android:id="@+id/rbAvailable"/>
+            <RadioButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Unavailable"
+                android:id="@+id/rbUnavailable"/>
+            </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Book Name "
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/etBookName"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Category "
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/etCategoryName"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15dp"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Author "
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/etAuthorName"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Publisher "
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/etPublisherName"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="ISBN No. "
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/etIsbnNumber"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Edition "
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/etEdition"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Pages "
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+            <EditText
+                android:id="@+id/etPages"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            >
+
+
+
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnUpdateBook"
+                android:text="Update"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="@drawable/button"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

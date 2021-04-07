@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".studentActivity">
+
+    <include
+        android:id="@+id/std_details_activity_toolbar"
+        layout="@layout/toolbar_layout">
+    </include>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amit"
+        android:layout_below="@id/std_details_activity_toolbar"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:id="@+id/stdDetails_name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1803070"
+        android:layout_below="@id/stdDetails_name"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:id="@+id/stdDetails_roll"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18 Series"
+        android:layout_below="@id/stdDetails_roll"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:id="@+id/stdDetails_series"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Science and Engineering"
+        android:layout_below="@id/stdDetails_series"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:id="@+id/stdDetails_department"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issue Books"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/stdDetails_department"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tv1"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:id="@+id/listView_issueBooks"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return Books"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/listView_issueBooks"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tv2"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:id="@+id/listView_returnBooks"/>
+</RelativeLayout>

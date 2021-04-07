@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stdDetailsForReturnBookActivity">
+    <include
+        android:id="@+id/std_details_returnBook_toolbar"
+        layout="@layout/toolbar_layout">
+    </include>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:id="@+id/lv_return_book_details"
+        android:layout_margin="10dp"
+        android:layout_below="@id/std_details_returnBook_toolbar"/>
+    <TextView
+        android:id="@+id/tv_issue_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="Select Book"
+        android:layout_below="@+id/lv_return_book_details"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_issue_details"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/btnRetBook"
+            android:layout_marginTop="20dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Return Book"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".issueBookActivityNew">
+
+    <include
+        android:id="@+id/issue_book_activity_toolbar"
+        layout="@layout/toolbar_layout">
+    </include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/issue_book_activity_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/etibRoll"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:background="@drawable/inputs"
+                    android:hint="Roll : e.g 1803069"
+                    android:layout_marginRight="20dp"
+                    />
+                <Button
+                    android:id="@+id/btnCheckRollofStd"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:text="Check"
+                    android:onClick="checkUserAvail"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:background="@drawable/button"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Category "
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <Spinner
+                    android:id="@+id/spibCategory"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:layout_width="294dp"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Book Name "
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <Spinner
+                    android:id="@+id/spibBook"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:layout_width="294dp"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Issue Date "
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/ibIssueDate"
+                    android:hint="Tap here to pick date"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:layout_width="294dp"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Return Date "
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:id="@+id/ibReturnDate"
+                    android:hint="Tap here to pick date"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:layout_width="294dp"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnIBook"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Issue Book"
+                android:background="@drawable/button"
+                android:textColor="#fff"
+                android:layout_marginTop="50dp"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listIssueBooks"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

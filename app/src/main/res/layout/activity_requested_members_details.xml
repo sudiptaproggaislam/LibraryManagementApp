@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".requestedMembersDetails">
+    <include
+        android:id="@+id/reqMembersDetails"
+        layout="@layout/toolbar_layout">
+    </include>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amit"
+        android:layout_below="@id/reqMembersDetails"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:id="@+id/name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1803070"
+        android:layout_below="@id/name"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:id="@+id/roll"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18 Series"
+        android:layout_below="@id/roll"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:id="@+id/series"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Science and Engineering"
+        android:layout_below="@id/series"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:id="@+id/department"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Checked"
+        android:layout_below="@id/department"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"
+        android:textSize="13dp"
+        android:textColor="#78C4E8"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:id="@+id/tvCheck"
+        />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/department"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="364dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/department"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Accept"
+            android:id="@+id/accept"/>
+
+        <Button
+            android:id="@+id/decline"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Decline" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

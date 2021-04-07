@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "62799872176",
+    "project_id": "library-management-a9c36",
+    "storage_bucket": "library-management-a9c36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62799872176:android:6e37998f5adfa176c43b75",
+        "android_client_info": {
+          "package_name": "com.progga.librarymanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62799872176-f86k983sq3cse6atjpvg1nsm207sfens.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.progga.librarymanagement",
+            "certificate_hash": "a5c1d1d7ca7c9f280676006813de2fa01d52a420"
+          }
+        },
+        {
+          "client_id": "62799872176-kj3skp44c2t36ivpnabuiqu3ofuansc1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXMDrxwQ_BAaklVabPVNbu3s6XcxM9ngc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62799872176-kj3skp44c2t36ivpnabuiqu3ofuansc1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

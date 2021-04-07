@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Library Management</string>
+
+    <string name="drawerOpen">drawerOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string-array name="userType">
+        <item>User Status</item>
+        <item>Student</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string-array name="dept">
+        <item>Department</item>
+        <item>Civil Engineering</item>
+        <item>Electrical and Electronic Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Computer Science and Engineering</item>
+        <item>Industrial and Production  Engineering</item>
+        <item>Electrical and Computer Engineering</item>
+        <item>Mechatronics Engineering</item>
+        <item>Glass and Ceramic Engineering</item>
+        <item>Urban and Regional Planning</item>
+        <item>Chemical and Food Processing Engineering</item>
+        <item>Materials Science and Engineering</item>
+        <item>Building Engineering and Construction Management</item>
+        <item>Architecture</item>
+    </string-array>
+
+    <string-array name="series">
+        <item>Series</item>
+        <item>15 series</item>
+        <item>16 series</item>
+        <item>17 series</item>
+        <item>18 series</item>
+        <item>19 series</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".booksCategoryActivity">
+
+    <include
+        android:id="@+id/books_Category_activity_toolbar"
+        layout="@layout/toolbar_layout">
+    </include>
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_bar_admin_book_category"
+        android:layout_below="@id/books_Category_activity_toolbar"
+        app:iconifiedByDefault="false"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/booksCategoryList"
+        android:layout_below="@+id/search_bar_admin_book_category"
+        android:padding="4dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/inputs"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        />
+</RelativeLayout>
